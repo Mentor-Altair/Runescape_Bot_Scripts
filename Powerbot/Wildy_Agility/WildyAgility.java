@@ -246,9 +246,6 @@ public class WildyAgility extends ActiveScript implements PaintListener, Message
             case 1:
                 Mouse.move(Random.nextInt(0, 700), Random.nextInt(0, 500));
                 break;
-            case 2:
-                Camera.setPitch(Random.nextBoolean());
-                break;
             case 3:
                 Camera.setPitch(Random.nextInt(1, 100));
                 break;
