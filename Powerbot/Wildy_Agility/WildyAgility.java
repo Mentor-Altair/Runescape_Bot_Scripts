@@ -119,7 +119,7 @@ public class WildyAgility extends ActiveScript implements PaintListener, Message
 
         if (o != null) {
             status = "Interacting with: " + o.getDefinition().getName();
-            if (o.isOnScreen()) {
+            if (Calculations.distanceTo(t) <= 2) {
                 if (animationTimer.getRemaining() <= 0) {
                     if (o.click(false)) {
                         if (Menu.contains(action)) {
